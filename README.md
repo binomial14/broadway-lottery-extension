@@ -14,7 +14,7 @@ _A simple Chrome extension to autofill Broadway lottery forms and save time._
 
 1. Clone or download this repo:
     ```bash
-    git clone https://github.com/binomial14/broadway-lottery-helper.git
+    git clone https://github.com/binomial14/broadway-lottery-extension.git
     ```
 2. Open Google Chrome and go to: `chrome://extensions/`
 3. Enable Developer Mode (toggle at top-right).
