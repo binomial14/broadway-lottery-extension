@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Broadway Lottery Helper</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <h3>Broadway Lottery Helper</h3>
+
+  <div class="controls">
+    <button id="autofill" class="primary">Fill All Events</button>
+    <button id="update" class="secondary">Update Info</button>
+  </div>
+
+  <div id="infoSection" class="hidden">
+    <label>First Name: <input id="first" type="text"></label>
+    <label>Last Name: <input id="last" type="text"></label>
+    <label>Email: <input id="email" type="email"></label>
+
+    <label>Date of Birth Month:
+      <select id="dobMonth">
+        <option value="">Month</option>
+        <option value="01">01</option><option value="02">02</option>
+        <option value="03">03</option><option value="04">04</option>
+        <option value="05">05</option><option value="06">06</option>
+        <option value="07">07</option><option value="08">08</option>
+        <option value="09">09</option><option value="10">10</option>
+        <option value="11">11</option><option value="12">12</option>
+      </select>
+    </label>
+
+    <label>Date of Birth Day: <input id="dobDay" type="text"></label>
+    <label>Date of Birth Year: <input id="dobYear" type="text"></label>
+    <label>ZIP Code: <input id="zip" type="text"></label>
+
+    <label>Country:
+      <select id="country">
+        <option value="">Select Country</option>
+        <option value="2">USA</option>
+        <option value="3">CANADA</option>
+        <option value="5">OTHER</option>
+      </select>
+    </label>
+
+    <label>Ticket Quantity:
+      <select id="ticketQty">
+        <option value="1">1</option>
+        <option value="2">2</option>
+      </select>
+    </label>
+
+    <button id="save" class="primary">Save</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

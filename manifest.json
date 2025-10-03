@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Broadway Lottery Helper",
+  "version": "1.0",
+  "icons": {
+    "48": "icons/icon48.png"
+  },
+  "description": "Autofill Broadway lottery forms",
+  "permissions": ["storage", "tabs", "scripting"],
+  "host_permissions": [
+    "https://lottery.broadwaydirect.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "defatul_icon": {
+        "48": "icons/icon48.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://lottery.broadwaydirect.com/*"],
+      "js": ["fillForm.js"]
+    }
+  ]
+}
